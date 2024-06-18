@@ -129,7 +129,7 @@ img{
     display: flex;
     justify-content: center;
     align-items:center ;
-    gap:30px;
+    gap:30px; position: relative; bottom: 20px;
 }
 .btn-rounded{
     border-radius: 5px;
@@ -146,30 +146,17 @@ img{
     border-radius: 4px;
 }
 
-.tabs{
-    background-color: #333;
-    border-bottom:var(--primary-color) ;
-    padding: 2rem 2rem;
-}
 .container{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    align-items: center;
-    text-align: center;
+	grid-template-rows: repeat(3, 1fr);
+	grid-gap: 1rem;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
 }
 
-.tab-item {
-    padding: 2rem;
-    color:#949393;
+.items{
+    border: 5px solid #333;
+    height: auto; width: auto;
 }
-.tab-item:hover{
-    color: white;
-    cursor: pointer;
-}
-.tab-b {
-    border-bottom: 3px solid var(--primary-color);
-<<<<<<< HEAD
-=======
 
->>>>>>> 5f4310661d8b31e9c801943f29d14af56f4dab94
-}
